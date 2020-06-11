@@ -1,0 +1,57 @@
+<div class="color" style="background-color: rgb(170, 163, 124);">
+    <div class="container1">
+        <div class="row">
+
+            <div class="col-md-8 banner-sec">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid"
+                                src="https://cdn.pixabay.com/photo/2015/03/29/23/22/wall-697851_1280.jpg"
+                                alt="First slide" height="100%" width="100%">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="banner-text">
+                                    <h2>Welcome to Online Movie Ticket System</h2>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 login-sec bg-light">
+                <h2 class="text-center">Admin Login</h2>
+                <form class="login-form" #loginForm='ngForm' (ngSubmit)='loginUser(loginForm)'>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"  style="color:black; font-size: 20px; 
+                        font-family: Georgia, 'Times New Roman', Times, serif;">AdminName</label>
+                        <input type="text" name="userName" id="userName" class="form-control"
+                            placeholder="Enter AdminName" #userName='ngModel' ngModel>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" 
+                            style="color:black; font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Password</label>
+                        <input type="password" name="password" id="password" class="form-control" #password='ngModel' ngModel
+                            placeholder="Enter Password">
+                    </div>
+
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                          
+                        </label>
+                        <button type="submit"  class="btn btn-login float-right">Click Here</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
